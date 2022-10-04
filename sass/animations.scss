@@ -1,0 +1,41 @@
+.circle-animation-top-bottom {
+    animation: circle-animation-top-bottom 10s ease-in-out infinite;
+}
+.circle-animation-bottom-top {
+    animation: circle-animation-bottom-top 10s ease-in-out infinite;
+}
+
+@keyframes circle-animation-top-bottom {
+    0% {
+        top: 0px;
+        left: 0px;
+        filter: blur(120px);
+    }
+    50% {
+        top: 400px;
+        left: 200px;
+        filter: blur(220px);
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+        filter: blur(120px);
+    }
+}
+@keyframes circle-animation-bottom-top {
+    0% {
+        bottom: 0px;
+        right: 0px;
+        filter: blur(120px);
+    }
+    50% {
+        bottom: 200px;
+        right: 600px;
+        filter: blur(220px);
+    }
+    100% {
+        bottom: 0px;
+        right: 0px;
+        filter: blur(120px);
+    }
+}

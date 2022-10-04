@@ -1,0 +1,8 @@
+@media screen and (min-width: 991px) {
+  .hamburger-menu {
+    display: none;
+  }
+  .nav-header .navbar .menu-center, .nav-header .navbar .menu-right {
+    display: block;
+  }
+}/*# sourceMappingURL=responsiveness.css.map */
