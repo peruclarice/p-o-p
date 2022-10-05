@@ -17,13 +17,8 @@
     <link rel="stylesheet" href="./sass/responsiveness.css">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="./assets/images/favicons/favicon-32x32.png" type="image/x-icon">
-
-    <script src="./assets/js/script.js"></script>
-    <!-- Core JS -->
-    <script src="assets/vendor/jquery/jquery.min.js"></script> <!-- jQuery JS (https://jquery.com) -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script> <!-- Bootstrap 3 JS (https://getbootstrap.com/docs/3.3/) -->
+    <link rel="shortcut icon" href="./assets/images/peru_favicon.svg" type="image/x-icon">
+    <link rel="icon" href="./assets/images/peru_favicon.svg" type="image/x-icon">
 
     <!-- Fontawesome icons -->
     <script src="https://kit.fontawesome.com/686a2e2af8.js" crossorigin="anonymous"></script>
@@ -32,7 +27,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="top">
     <header class="nav-header">
         <nav class="navbar py-3 px-5">
             <a href="/home.html" class="navbar-brand img-logo">
@@ -43,7 +38,7 @@
             </a>
             <div class="menu-center">
                 <ul class="menu">
-                    <li><a class="nav-link active" href="./home.html">Home<span class="line-divide"></span></a></li>
+                    <li><a class="nav-link active" href="#">Home<span class="line-divide"></span></a></li>
                     <li><a class="nav-link" href="./about_me.html"  title="Learn more about me">About me<span class="line-divide"></span></a></li>
                     <li><a class="nav-link" href="./my_projects.html"  title="See my projects">Case Studies<span class="line-divide"></span></a></li>
                     <li><a class="nav-link" href="./my_skills.html"  title="contact me">My Skills<span class="line-divide"></span></a></li>
@@ -53,7 +48,7 @@
                 </ul>
             </div>
             <div class="menu-right">
-                <a href="mailto:clarice.kibii@meltwater.org" class="btn btn-primary">Reach out to Me <i>&#128231;</i></a>
+                <a class="btn btn-primary" href="#exampleModal" data-bs-toggle="modal" data-toggle="modal">Reach out to Me <i>&#128231;</i></a>
             </div>
             <div class="hamburger-menu">
                 <a class="btn btn-secondary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
@@ -80,7 +75,7 @@
         </nav>
     </header>
     <main>
-        <section class="hero flx flx-c flx-align-c">
+        <section class="hero flx flx-c flx-align-c" id="hero">
             <div class="circle-container">
                 <img src="./assets/images/curves.svg" alt="curves">
                 <div class="cricle-1"></div>
@@ -100,13 +95,13 @@
                     <!-- <a class="btn btn-secondary" href="mailto:clarice.kibii@meltwater.org">Reach out to me &#128231;</a> -->
                 </div>
                 <div class="col-12 col-md-6">
-                    <div class="hero-img">
+                    <div class="hero-img img-bx-shadow">
                         <img src="https://media-exp1.licdn.com/dms/image/C5603AQG7QmoG30bNyg/profile-displayphoto-shrink_400_400/0/1584720526984?e=1669248000&v=beta&t=Eqnuje0MehtxUL-3XWz-9V42R_YWMT_ZPXvjhF2Z35Y" alt="Profile Img">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="flx flx-align-c flx-c" style="min-height: 50vh;"> 
+        <section class="flx flx-align-c flx-c"> 
             <div class="container-md text-center">
                 <h3>About Me</h3>
                 <p>
@@ -204,6 +199,37 @@
         </section>
         
     </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="circle-container">
+                <img src="./assets/images/curves.svg" alt="curves">
+                <div class="cricle-1"></div>
+                <div class="circle-2 circle-animation-bottom-top"></div>
+                <div class="circle-3 circle-animation-top-bottom"></div>
+            </div>
+            <div class="modal-header" style="justify-content: end;">
+            <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            <h3>Reach Out to Me, <br> Promise I don't Bite &#128512;</h3>
+            <div class="card card-body">
+                <a href="mailto:clarice.kibii@meltwater.org" class="text-decoration-none">
+                    <h5><span class="mx-2">&#128231;</span> clarice.kibii@meltwater.org</h5>
+                </a> 
+                <br>
+                <a class="btn btn-primary" href="">Contact Me Directly</a>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div> 
+
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="z-index: 1100;">
         <div class="circle-container">
             <img src="./assets/images/curves.svg" alt="curves">
@@ -268,6 +294,9 @@
             </div>
         </div>
       </div>
+      <a href="#top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+      </a>
 </body>
 <footer class="footer">
     <div class="footer-inner" style="position: relative; overflow: hidden;">
@@ -283,11 +312,11 @@
                     <div class="footer-block menu-footer">
                         <h4 class="f-block-heading">Menu</h4>
                         <ul class="f-block-links">
-                            <li><a href="/">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="/case-study-qxp">Case Studies #1 (Learning Managment System)</a></li>
-                            <li><a href="/case-study-vertexpay">Case Studies #2 (Digital Banking)</a></li>
-                            <li><a href="#">Case Studies #3 (E-commerce Store)</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="./about_me.html">About</a></li>
+                            <li><a href="./my_projects.html">Case Studies #1 (Learning Managment System)</a></li>
+                            <li><a href="./my_projects.html">Case Studies #2 (Digital Banking)</a></li>
+                            <li><a href="./my_projects.html">Case Studies #3 (E-commerce Store)</a></li>
                             <li><a href="mailto:claricekibii@gmail.com">Contact</a></li>
                         </ul>
                     </div>

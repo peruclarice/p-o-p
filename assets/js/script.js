@@ -5,3 +5,7 @@ function scrolled() {
    elem.toggleClass('scrolled', threshold);
    }
 $(window).on({ scroll: scrolled });
+
+$('#myModal').on('shown.bs.modal', function () {
+   $('#myInput').trigger('focus')
+ })

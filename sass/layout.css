@@ -331,4 +331,55 @@ img {
 .footer .footer-block.menu-footer .f-block-links a {
   color: inherit;
   text-decoration: none;
+}
+
+.modal {
+  font-size: 16px;
+}
+.modal h3 {
+  font-size: 1.75rem;
+}
+.modal h5 {
+  font-size: 1.2rem;
+}
+.modal p {
+  font-size: 1rem;
+}
+.modal .modal-content {
+  border-radius: 50px 0;
+  overflow: hidden;
+  position: relative;
+}
+.modal .modal-content .circle-container {
+  height: 100%;
+  z-index: 0;
+}
+.modal .modal-content .circle-container img {
+  width: auto;
+  display: none;
+}
+.modal .modal-header {
+  border: 0;
+  z-index: 5;
+  position: relative;
+}
+.modal .modal-header .close {
+  border: 0;
+  font-size: 1.75rem;
+  background: transparent;
+  padding: 0 1rem;
+}
+.modal .modal-body {
+  text-align: center;
+  z-index: 5;
+}
+.modal .modal-body .card {
+  border: 0;
+}
+.modal .modal-body .card-body {
+  background: transparent;
+}
+
+.text-decoration-none {
+  text-decoration: none;
 }/*# sourceMappingURL=layout.css.map */

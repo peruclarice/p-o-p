@@ -4,46 +4,252 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Clarice Peru</title>
+    <title>Clarice Peru</title>
+
+    <!-- Bootstrap 3 CSS (https://getbootstrap.com/docs/3.3/) -->
+    <!-- <link rel="stylesheet" href="./assets/css/bootstrap/bootsrap.min.css"> -->
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="./sass/style.css">
+    <link rel="stylesheet" href="./sass/layout.css">
+    <link rel="stylesheet" href="./sass/animations.css">
+    <link rel="stylesheet" href="./sass/responsiveness.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/peru_favicon.svg" type="image/x-icon">
+    <link rel="icon" href="./assets/images/peru_favicon.svg" type="image/x-icon">
+
+    <!-- Fontawesome icons -->
+    <script src="https://kit.fontawesome.com/686a2e2af8.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="./home.html">Home</a></li>
-                <li><a href="./about_me.html"  title="Learn more about me">About me &#128100;</a></li>
-                <li><a href="./my_projects.html"  title="See my projects">Case Studies &#128452;</a></li>
-                <li><a href="./my_skills.html"  title="contact me">My Skills &#128206;</a></li>
-                <li><a href="./my_cv.html"  title="contact me">My Resume &#128203;</a></li>
-                <li><a href="./contact.html"  title="contact me">Reach out to me &#128231;</a></li>
-            </ul>
+<body id="top">
+    <header class="nav-header">
+        <nav class="navbar py-3 px-5">
+            <a href="/home.html" class="navbar-brand img-logo">
+                <!-- <img src="./assets/images/favicons/android-icon-144x144.png" alt="image logo"> -->
+                <!-- <img src="./assets/images/svg/peru_logo.svg" alt="image logo"> -->
+                <object data="./assets/images/svg/peru_logo.svg" type="" style="width: 120px;"></object>
+                <!-- <object data="./assets/images/svg/peru_logo2.svg" type="" style="width: 120px;"></object> -->
+            </a>
+            <div class="menu-center">
+                <ul class="menu">
+                    <li><a class="nav-link" href="./index.html">Home<span class="line-divide"></span></a></li>
+                    <li><a class="nav-link active" href="./about_me.html"  title="Learn more about me">About me<span class="line-divide"></span></a></li>
+                    <li><a class="nav-link" href="./my_projects.html"  title="See my projects">Case Studies<span class="line-divide"></span></a></li>
+                    <li><a class="nav-link" href="./my_skills.html"  title="contact me">My Skills<span class="line-divide"></span></a></li>
+                    <li><a class="nav-link" href="./my_cv.html"  title="contact me">My Resume &#128203;<span class="line-divide"></span></a></li>
+                    <!-- <li><a class="nav-link" href="./contact.html"  title="contact me">Reach out to me<span class="line-divide"></span></a></li> -->
+                    <!-- <div> &#128100;  &#128452; &#128206; &#128203; &#128231;</div> -->
+                </ul>
+            </div>
+            <div class="menu-right">
+                <a class="btn btn-primary" href="#exampleModal" data-bs-toggle="modal" data-toggle="modal">Reach out to Me <i>&#128231;</i></a>
+            </div>
+            <div class="hamburger-menu">
+                <a class="btn btn-secondary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <span class="fas fa-bars" style="font-size: 1.25rem;"></span>
+                  </a>
+            </div>
         </nav>
     </header>
-    <section>
-        <div>
-            <h1>All About Me! &#128512;</h1>
-            <h3><span>&#9996;</span> Let's Get started</h3>
-            <hr>
-            <ul>
-                <h4>What I like:</h4>
-                <hr>
-                <li>Cats</li>
-                <li>Family</li>
-                <li>Horror & Musical films</li>
-            </ul>
-            <button><a href="./about_me.html" target="_blank">About me &#128512;</a></button></button>
-            <button><a href="mailto:clarice.kibii@meltwater.org"></a>Reach out to me &#128231;</button>
+    <main>
+        <section class="about-me-hero flx flx-align-c">
+            <div class="container">
+                <div class="row m-0 flx-align-c">
+                    <div class="col-md-6">
+                        <div class="about-me-content">
+                            <h1>All About <span>Clarice Peru</span></h1>
+                            <h6 class="quote">
+                                Anyone who tells you they are doing it all perfectly is a liar.
+                            </h6>
+                            <h6 style="font-weight: 300;"> - Shonda Rhimes</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="about-me-img">
+                            <img src="./assets/images/about-me-2.jpeg" alt="about-me-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>   
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="circle-container">
+                <img src="./assets/images/curves.svg" alt="curves">
+                <div class="cricle-1"></div>
+                <div class="circle-2 circle-animation-bottom-top"></div>
+                <div class="circle-3 circle-animation-top-bottom"></div>
+            </div>
+            <div class="modal-header" style="justify-content: end;">
+            <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            <h3>Reach Out to Me, <br> Promise I don't Bite &#128512;</h3>
+            <div class="card card-body">
+                <a href="mailto:clarice.kibii@meltwater.org" class="text-decoration-none">
+                    <h5><span class="mx-2">&#128231;</span> clarice.kibii@meltwater.org</h5>
+                </a> 
+                <br>
+                <a class="btn btn-primary" href="">Contact Me Directly</a>
+            </div>
+            </div>
         </div>
-        <!-- <img src="https://media-exp1.licdn.com/dms/image/C5603AQG7QmoG30bNyg/profile-displayphoto-shrink_400_400/0/1584720526984?e=1669248000&v=beta&t=Eqnuje0MehtxUL-3XWz-9V42R_YWMT_ZPXvjhF2Z35Y" alt="diversity" width="220"> -->
-    </section>
+        </div>
+    </div> 
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="z-index: 1100;">
+        <div class="circle-container">
+            <img src="./assets/images/curves.svg" alt="curves">
+            <div class="cricle-1"></div>
+            <div class="circle-2"></div>
+            <div class="circle-3"></div>
+        </div>
+        <div class="offcanvas-header" style="justify-content: end;">
+          <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5> -->
+          <button type="button" class="btn-close text-reset mt-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="menu-sidebar">
+                <li><a class="nav-link" href="./home.html">Home<span class="line-divide"></span></a></li>
+                <li><a class="nav-link active" href="./about_me.html"  title="Learn more about me">About me<span class="line-divide"></span></a></li>
+                <!-- <li><a class="nav-link" href="./my_projects.html"  title="See my projects">Case Studies<span class="line-divide"></span></a></li> -->
+                <!-- <li>
+                    <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownCaseStudies" data-bs-toggle="dropdown" aria-expanded="false">
+                              Case Studies<span class="line-divide"></span>
+                            </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownCaseStudies">
+                          <li><a class="dropdown-item" href="#">Building a Digital Banking System</a></li>
+                          <li><a class="dropdown-item" href="#">Creating a Learning Managment System</a></li>
+                          <li><a class="dropdown-item" href="#">Rebranding a Digital Branding Agency</a></li>
+                        </ul>
+                    </div>
+                </li> -->
+                <li>
+                    <a class="nav-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Case Studies
+                        <!-- <span class="line-divide"></span> -->
+                      </a>
+                    <div class="collapse" id="collapseExample">
+                      <div class="card card-body">
+                        <ul class="cs-menu" aria-labelledby="dropdownCaseStudies">
+                            <li><a  href="#">Building a Digital Banking System</a></li>
+                            <li><a  href="#">Creating a Learning Managment System</a></li>
+                            <li><a  href="#">Rebranding a Digital Branding Agency</a></li>
+                          </ul>
+                      </div>
+                    </div>
+                </li>
+                <li><a class="nav-link" href="./my_skills.html"  title="My skills">My Skills<span class="line-divide"></span></a></li>
+                <li><a class="nav-link" href="./assets/images/CLARICE_PERU_UX_RESUME.pdf"  title="download my resume" download>Download My Resume &#128203;<span class="line-divide"></span></a></li>
+            </ul>
+        </div>
+        <div class="offcanvas-footer px-4 py-3">
+            <div class="sidebar-links flx flx-align-c flx-bt">
+                <a href="">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="">
+                    <i class="fas fa-globe"></i>
+                </a>
+                <a href="">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+      </div>
+      <a href="#top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+      </a>
 
 </body>
-<footer>
-    <ul>
-        <h4>You can reach out to me at the following</h4>
-        <li><a href="https://www.instagram.com/peruclarice/" target="_blank">Instagram</a></li>
-        <li><a href="https://www.linkedin.com/in/clarice-jeberur-283054169/" target="_blank">LinkedIn</a></li>
-        <li><a href="http://peruclarice.com/" target="_blank">www.peruclarice.com</a></li>
-    </ul>
+<footer class="footer">
+    <div class="footer-inner" style="position: relative; overflow: hidden;">
+        <div class="circle-container">
+            <img src="./assets/images/curves.svg" alt="curves">
+            <div class="cricle-1"></div>
+            <div class="circle-2"></div>
+            <div class="circle-3"></div>
+        </div>
+        <div class="footer-container tt-wrap">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="footer-block menu-footer">
+                        <h4 class="f-block-heading">Menu</h4>
+                        <ul class="f-block-links">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="./my_projects.html">Case Studies #1 (Learning Managment System)</a></li>
+                            <li><a href="./my_projects.html">Case Studies #2 (Digital Banking)</a></li>
+                            <li><a href="./my_projects.html">Case Studies #3 (E-commerce Store)</a></li>
+                            <li><a href="mailto:claricekibii@gmail.com">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="col-md-3 col-sm-6 col-xs-12">
+    
+                    <div class="footer-block">
+                        <h4 class="f-block-heading">Follow</h4>
+                        <ul class="f-block-links">
+                            <li><a href="https://www.facebook.com/clarice.peru" target="_blank">Facebook</a></li>
+                            <li><a href="#" target="_blank">Twitter</a></li>
+                            <li><a href="https://www.instagram.com/peruclarice/" target="_blank">Instagram</a></li>
+                            <li><a href="#" target="_blank">Behance</a></li>
+                            <li><a href="#" target="_blank">Dribbble</a></li>
+                        </ul>
+                    </div>
+    
+                </div>
+    
+                <div class="col-md-3 col-sm-12 col-xs-12">
+    
+                    <div class="footer-block">
+                        <h4 class="f-block-heading">Contact</h4>
+                        <div class="f-block-text">
+                            <p>Kilimani, <br> Nairobi, Kenya</p>
+                            <p>+254 714 739 030<br>
+                            <a href="mailto:claricekibii@gmail.com">claricekibii@gmail.com</a></p>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-container tt-wrap">
+                <div class="row">
+                    <div class="col-md-12">
+    
+                        <!-- Begin footer copyright -->
+                        <div class="text-center">Copyright  &copy; 2021 | All rights reserved</div>
+                        <!-- End footer copyright -->
+    
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    
+    </div>
 </footer>
 </html>

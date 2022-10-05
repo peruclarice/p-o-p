@@ -237,3 +237,52 @@ img {
         }
     }
 }
+.modal {
+    font-size: 16px;
+    h3 {
+        font-size: 1.75rem;
+    }
+    h5 {
+        font-size: 1.2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .modal-content {
+        border-radius: 50px 0;
+        overflow: hidden;
+        position: relative;
+        .circle-container {
+            height: 100%;
+            z-index: 0;
+            img {
+                width: auto;
+                display: none;
+            }
+        }
+    }
+    .modal-header {
+        border: 0;
+        z-index: 5;
+        position: relative;
+        .close {
+            border: 0;
+            font-size: 1.75rem;
+            background: transparent;
+            padding: 0 1rem;
+        }
+    }
+    .modal-body {
+        text-align: center;
+        z-index: 5;
+        .card {
+            border: 0;
+        }
+        .card-body {
+            background: transparent;
+        }
+    }
+}
+.text-decoration-none {
+    text-decoration: none;
+}
