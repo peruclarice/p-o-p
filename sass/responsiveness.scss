@@ -8,3 +8,83 @@
         }
     }
 }
+@media screen and (max-width:768px) {
+    .hero-img {
+        margin: 1rem auto;
+    }
+    .circle-container {
+        // overflow: hidden;
+        height: 200vh;
+        img {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width:600px) {
+    section {
+        padding: 1rem;
+    }
+    .circle-container .circle-3, .circle-container .circle-2 {
+        animation: none;
+    }
+    .nav-header {
+        width: 100%;
+        position: fixed;
+    }
+    main {
+        padding-top: 100px;
+    }
+    .timeline-box-container {
+        width: 100%;
+        .path-timeline {
+            left: 0;
+        }
+    }
+    .footer {
+        width: 100%;
+    }
+    .offcanvas {
+        height: 100vh;
+        .offcanvas-body .menu-sidebar li {
+            padding: .8rem 1rem;
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+    }
+}
+@media screen and (max-width: 570px) {
+    .circle-container {
+        // overflow: hidden;
+        .circle-1 {
+            right: 0px;
+            left: 0px;
+        }
+        .circle-2 {
+            bottom: 0px;
+            right: 0px;
+        }
+        .circle-3 {
+            top: 0px;
+            left: 0px;
+        }
+    }
+    .timeline-box-container {
+        flex: 1 1 100%;
+    }
+    .timeline-box-container {
+        .timeline-box {
+            max-width: none;
+            text-align: center;
+            .img-title {
+                align-items: center;
+            }
+        }
+        .timeline-box.empty {
+            max-width: none;
+            display: none;
+        }
+    } 
+    .my-case-studies img {
+        margin-bottom: 1rem;
+    }
+}
