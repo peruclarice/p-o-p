@@ -18,6 +18,14 @@
         img {
             display: none;
         }
+        .circle-3 {
+            top: 0;
+            left: 0;
+        }
+        .circle-2 {
+            bottom: 0;
+            right: 0;
+        }
     }
 }
 @media screen and (max-width:600px) {
@@ -53,6 +61,9 @@
     }
 }
 @media screen and (max-width: 570px) {
+    section.hero {
+        padding: 1rem .5rem;
+    }
     .circle-container {
         // overflow: hidden;
         .circle-1 {
