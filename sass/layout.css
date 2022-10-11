@@ -382,4 +382,10 @@ img {
 
 .text-decoration-none {
   text-decoration: none;
+}
+
+.sticky-position {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }/*# sourceMappingURL=layout.css.map */

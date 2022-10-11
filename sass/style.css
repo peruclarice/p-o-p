@@ -368,4 +368,44 @@ a.btn, a button, a .btn {
   color: #f6f6f6;
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
+}
+
+.case-study-overview .row {
+  min-height: 100vh;
+}
+.case-study-overview .row object {
+  height: 100%;
+}
+
+.my-skills-cards .card {
+  background: transparent;
+  box-shadow: none;
+}
+.my-skills-cards .card .card-header {
+  border: 0;
+}
+.my-skills-cards .card .card-body {
+  background: transparent;
+}
+
+.card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: 0;
+  background: linear-gradient(45deg, #fafafa, white);
+}
+.card .card-header {
+  padding: 1rem 1rem 0;
+  background: transparent;
+}
+
+.skills-header {
+  min-height: 18vh;
+  padding: 3rem;
+  margin: 0 0 1rem;
+  overflow: hidden;
+  position: relative;
+}
+.skills-header .circle-container {
+  height: 100%;
+  top: 0;
 }/*# sourceMappingURL=style.css.map */

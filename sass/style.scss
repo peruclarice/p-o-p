@@ -366,3 +366,43 @@ a.btn, a button, a .btn {
     color: dark-theme.$color;
     backdrop-filter: blur(4px);
 }
+.case-study-overview {
+    .row {
+        min-height: 100vh;
+        object {
+            height: 100%;
+        }
+    }
+}
+.my-skills-cards {
+    .card {
+        background: transparent;
+        box-shadow: none;
+        .card-header {
+            border: 0;
+        }
+        .card-body {
+            background: transparent;
+        }
+    }
+}
+.card {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 0;
+    background: linear-gradient(45deg, #fafafa, #ffff);
+    .card-header {
+        padding: 1rem 1rem 0;
+        background: transparent;
+    }
+}
+.skills-header {
+    min-height: 18vh;
+    padding: 3rem;
+    margin: 0 0 1rem;
+    overflow: hidden;
+    position: relative;
+    .circle-container {
+        height: 100%;
+        top: 0;
+    }
+}

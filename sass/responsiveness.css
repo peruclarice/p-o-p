@@ -7,6 +7,25 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .my-case-studies {
+    text-align: center;
+  }
+  .my-case-studies .case-study-overview {
+    text-align: center;
+  }
+  .my-case-studies .opposite-row {
+    flex-direction: column-reverse;
+  }
+  .cases-2 .row {
+    text-align: center;
+  }
+  .cases-2 img {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+  .cases-child-reverse {
+    flex-direction: column-reverse;
+  }
   .hero-img {
     margin: 1rem auto;
   }

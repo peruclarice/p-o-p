@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarice Peru</title>
+
+    <!-- Bootstrap 3 CSS (https://getbootstrap.com/docs/3.3/) -->
+    <!-- <link rel="stylesheet" href="./assets/css/bootstrap/bootsrap.min.css"> -->
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="./sass/style.css">
+    <link rel="stylesheet" href="./sass/layout.css">
+    <link rel="stylesheet" href="./sass/animations.css">
+    <link rel="stylesheet" href="./sass/responsiveness.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/peru_favicon.svg" type="image/x-icon">
+    <link rel="icon" href="./assets/images/peru_favicon.svg" type="image/x-icon">
+
+    <!-- Fontawesome icons -->
+    <script src="https://kit.fontawesome.com/686a2e2af8.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</head>
+<body id="top">
+    <header class="nav-header">
+        <nav class="navbar py-3 px-5">
+            <a href="./index.html" class="navbar-brand img-logo">
+                <!-- <img src="./assets/images/favicons/android-icon-144x144.png" alt="image logo"> -->
+                <!-- <img src="./assets/images/svg/peru_logo.svg" alt="image logo"> -->
+                <object data="./assets/images/svg/peru_logo.svg" type="" style="width: 120px;"></object>
+                <!-- <object data="./assets/images/svg/peru_logo2.svg" type="" style="width: 120px;"></object> -->
+            </a>
+            <div class="menu-center">
+                <ul class="menu">
+                    <li><a class="nav-link" href="./index.html">Home<span class="line-divide"></span></a></li>
+                    <li><a class="nav-link" href="./about_me.html"  title="Learn more about me">About me<span class="line-divide"></span></a></li>
+                    <li><a class="nav-link" href="./my_projects.html"  title="See my projects">Case Studies<span class="line-divide"></span></a></li>
+                    <li><a class="nav-link active" href="./my_skills_new.html"  title="contact me">My Skills<span class="line-divide"></span></a></li>
+                    <li><a class="nav-link" href="./assets/images/CLARICE_PERU_UX_RESUME.pdf"  title="contact me" download>My Resume &#128203;<span class="line-divide"></span></a></li>
+                    <!-- <li><a class="nav-link" href="./contact.html"  title="contact me">Reach out to me<span class="line-divide"></span></a></li> -->
+                    <!-- <div> &#128100;  &#128452; &#128206; &#128203; &#128231;</div> -->
+                </ul>
+            </div>
+            <div class="menu-right">
+                <a class="btn btn-primary" href="#exampleModal" data-bs-toggle="modal" data-toggle="modal">Reach out to Me <i>&#128231;</i></a>
+            </div>
+            <div class="hamburger-menu">
+                <a class="btn btn-secondary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <span class="fas fa-bars" style="font-size: 1.25rem;"></span>
+                  </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="skills-header">
+            <div class="circle-container">
+                <img src="./assets/images/curves.svg" alt="curves">
+                <div class="cricle-1"></div>
+                <div class="circle-2"></div>
+                <div class="circle-3"></div>
+            </div>
+            <div class="flx flx-align-c flx-c" style="flex-direction:column; position: relative;">
+                <h1>My Experiences & Skills</h1>
+                <h5>Here I list all my experiences and skills in chronological order</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="container my-skills-cards">
+                    <div class="card">
+                        <div class="card-header mb-3">
+                            <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Overview</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Reviews</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+                                </li>
+                              </ul>
+                        </div>
+                          <div class="card-body">
+                            <div class="tab-content p-4" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <h5>Overview</h5>
+                                    <p>
+                                        I am UX developer with a heart for social justice and women empowerment. My 2 years of experience in developing websites for multiple NGOs and Social justice start-ups has offered me a platform I did not know I needed. To progress my UX design skills while attending to my need to speak out for social injustices all over the county. From the need to empower girls in the field of Technology to the re-branding of online businesses in order to increase their users tenfold, my projects have been used to emulate some of these passions. Passions that are near and dear to my heart.
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <h5>Reviews</h5>
+                                    <p>
+                                        Here, you will get to see what people say about my skills, work ethic and personality
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                    <h5>My Contact</h5>
+                                    <p>
+                                        Follow me at any of the channels below, let's work together!
+                                    </p>
+                                    <div class="sidebar-links flx flx-align-c flx-bt" style="max-width: 200px;">
+                                        <a href="">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="fa fa-linkedin"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="fas fa-globe"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="fas fa-envelope"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                    </div>
+                    <br>
+                    <div class="card mb-5">
+                        <h3 class="card-title">Expertise</h3>
+                        <div class="card-body">
+                            <div class="row flx-bt flx-align-c my-3">
+                                <div class="col-md-2">
+                                    <img src="./assets/images/mest-logo.png" alt="logos" style="width: 100px;">
+                                </div>
+                                <div class="col-md-6">
+                                    <div style="max-width: 350px;">
+                                        <p>MEST</p>
+                                        <p>Entreprenur in Tech</p>
+                                        <!-- <p>
+                                            Joining the MEST journey to become a globally successfull enteprenuer
+                                        </p> -->
+                                    </div>
+                                </div>
+                                <div class="col-md-2" >
+                                    <p>2022 - Present</p>
+                                </div>
+                            </div>
+                            <div class="row flx-bt flx-align-c my-3">
+                                <div class="col-md-2">
+                                    <img src="./assets/images/nolla-logo.svg" alt="logos" style="width: 100px;">
+                                </div>
+                                <div class="col-md-6">
+                                    <div style="max-width: 350px;">
+                                        <p>Nolla Bank</p>
+                                        <p>Freelance Designer</p>
+                                        <!-- <p>
+                                            I worked in the UI/UX field when working this particular client.
+                                        </p> -->
+                                    </div>
+                                </div>
+                                <div class="col-md-2" >
+                                    <p>July 2022 - Sep 2022</p>
+                                </div>
+                            </div>
+                            <div class="row flx-bt flx-align-c my-3">
+                                <div class="col-md-2">
+                                    <img src="./assets/images/pym-logo.svg" alt="logos" style="width: 100px;">
+                                </div>
+                                <div class="col-md-6">
+                                    <div style="max-width: 350px;">
+                                        <p>Plan Your Meds</p>
+                                        <p>Freelance Designer</p>
+                                        <!-- <p>
+                                            I worked in the UI/UX field when working this particular client
+                                        </p> -->
+                                    </div>
+                                </div>
+                                <div class="col-md-2" >
+                                    <p>Feb 2022 - Sep 2022</p>
+                                </div>
+                            </div>
+                            <div class="row flx-bt flx-align-c my-3">
+                                <div class="col-md-2">
+                                    <img src="./assets/images/qxp-logo.svg" alt="logos" style="width: 100px;">
+                                </div>
+                                <div class="col-md-6">
+                                    <div style="max-width: 350px;">
+                                        <p>QXP</p>
+                                        <p>Junior Web Developer and Designer</p>
+                                        <!-- <p>
+                                            Joining the MEST journey to become a globally successfull enteprenuer
+                                        </p> -->
+                                    </div>
+                                </div>
+                                <div class="col-md-2" >
+                                    <p>2019 - 2022</p>
+                                </div>
+                            </div>
+                            <div class="row flx-bt flx-align-c my-3">
+                                <div class="col-md-2">
+                                    <img src="./assets/images/v-pay.svg" alt="logos" style="width: 100px;">
+                                </div>
+                                <div class="col-md-6">
+                                    <div style="max-width: 350px;">
+                                        <p>Vertex Pay</p>
+                                        <p>Junior Web Developer and Designer</p>
+                                        <!-- <p>
+                                            Joining the MEST journey to become a globally successfull enteprenuer
+                                        </p> -->
+                                    </div>
+                                </div>
+                                <div class="col-md-2" >
+                                    <p>2019 - 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-5">
+                        <h3 class="card-title">Education</h3>
+                        <div class="card-body">
+                            <div class="row flx-bt flx-align-c my-3">
+                                <div class="col-md-2">
+                                    <img src="https://tukenya.ac.ke/images/logo.png" alt="logos" style="width: 100px;">
+                                </div>
+                                <div class="col-md-4">
+                                    <div style="max-width: 350px;">
+                                        <p>Techincal University of Kenya</p>
+                                        <p>Computer Science Degree</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2" >
+                                    <p>2015 - 2019</p>
+                                </div>
+                            </div>
+                            <div class="row flx-bt flx-align-c my-3">
+                                <div class="col-md-2">
+                                    <img src="https://www.sachohighschool.sc.ke/wp-content/uploads/2022/08/Sacho-HS-Logo.png" alt="logos" style="width: 100px;">
+                                </div>
+                                <div class="col-md-4">
+                                    <div style="max-width: 350px;">
+                                        <p>Sacho Highschool</p>
+                                        <p>High school education</p>
+                                        <!-- <p>
+                                            I worked in the UI/UX field when working this particular client.
+                                        </p> -->
+                                    </div>
+                                </div>
+                                <div class="col-md-2" >
+                                    <p>2011 - 2014</p>
+                                </div>
+                            </div>
+                            <div class="row flx-bt flx-align-c my-3">
+                                <div class="col-md-2">
+                                    <img src="https://image.shutterstock.com/image-vector/ui-image-placeholder-wireframes-apps-260nw-1037719204.jpg" alt="logos" style="width: 100px;">
+                                </div>
+                                <div class="col-md-4">
+                                    <div style="max-width: 350px;">
+                                        <p>Nairobi Primary School</p>
+                                        <p>Primary School Education</p>
+                                        <!-- <p>
+                                            I worked in the UI/UX field when working this particular client
+                                        </p> -->
+                                    </div>
+                                </div>
+                                <div class="col-md-2" >
+                                    <p>2003 - 2008</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="sticky-position">
+                    <h3>My Skills</h3>
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <h5 class="card-title">Technical Skills:</h5>
+                            <p>The following are my technical Skills</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <th>Skills</th>
+                                        <th>Rating</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>HTML</td>
+                                            <td>
+                                                <span>&#9733;&#9733;&#9733;&#9733;</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>CSS</td>
+                                            <td>
+                                                <span>&#9733;&#9733;&#9733;&#9733;</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Javascript</td>
+                                            <td>
+                                                <span>&#9733;&#9734;&#9734;&#9734;</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bootstrap</td>
+                                            <td>
+                                                <span>&#9733;&#9733;&#9733;&#9733;</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>SAAS</td>
+                                            <td>
+                                                <span>&#9733;&#9733;&#9733;&#9733;</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>UI/UX Design</td>
+                                            <td>
+                                                <span>&#9733;&#9733;&#9733;&#9733;</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Graphic Design</td>
+                                            <td>
+                                                <span>&#9733;&#9733;&#9733;&#9734;</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-5">
+                        <div class="card-header">
+                            <h5 class="card-title">My Soft Skills</h5>
+                            <p>The following are my soft skills :</p>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-striped">
+                                <thead>
+                                    <th>Skills</th>
+                                    <th>Rating</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Empathy Design thinking</td>
+                                        <td>
+                                            <span>&#9733;&#9733;&#9733;&#9734;</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Great Communications skills</td>
+                                        <td>
+                                            <span>&#9733;&#9733;&#9733;&#9734;</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Working in teams</td>
+                                        <td>
+                                            <span>&#9733;&#9733;&#9733;&#9734;</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- My Skills Section -->
+
+        <!-- <section class="road-map">
+            <div class="container">
+                <div class="road-map-header">
+                    <h3>My Skills</h3>
+                    <p>The following are my skills professionally</p>
+                    <a class="btn btn-primary" href="#">Learn More on My Journey</a>
+                </div>
+                <div class="timeline-box-container">
+                    <div class="path-timeline"></div>
+                    <div class="timeline-box">
+                        <h4>Technical Skills:</h4>
+                        <div class="img-title flx flx-align-c">
+                            <p>The following are my technical Skills</p>
+                            <div>
+                                <table class="table">
+                                    <thead>
+                                        <th>Skills</th>
+                                        <th>Rating</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>HTML</td>
+                                            <td>
+                                                <span>&#9733;&#9733;&#9733;&#9733;</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>CSS</td>
+                                            <td>
+                                                <span>&#9733;&#9733;&#9733;&#9733;</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Javascript</td>
+                                            <td>
+                                                <span>&#9733;&#9734;&#9734;&#9734;</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bootstrap</td>
+                                            <td>
+                                                <span>&#9733;&#9733;&#9733;&#9733;</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>SAAS</td>
+                                            <td>
+                                                <span>&#9733;&#9733;&#9733;&#9733;</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>UI/UX Design</td>
+                                            <td>
+                                                <span>&#9733;&#9733;&#9733;&#9733;</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Graphic Design</td>
+                                            <td>
+                                                <span>&#9733;&#9733;&#9733;&#9734;</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-box empty"></div>
+                    <div class="timeline-box empty"></div>
+                    <div class="timeline-box">
+                        <h4>My Soft Skills</h4>
+                        <div class="img-title flx flx-align-c">
+                            <p>The following are my soft skills :</p>
+                        </div>
+                        <div>
+                            <table class="table">
+                                <thead>
+                                    <th>Skills</th>
+                                    <th>Rating</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Empathy Design thinking</td>
+                                        <td>
+                                            <span>&#9733;&#9733;&#9733;&#9734;</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Great Communications skills</td>
+                                        <td>
+                                            <span>&#9733;&#9733;&#9733;&#9734;</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Working in teams</td>
+                                        <td>
+                                            <span>&#9733;&#9733;&#9733;&#9734;</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  -->
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="circle-container">
+                <img src="./assets/images/curves.svg" alt="curves">
+                <div class="cricle-1"></div>
+                <div class="circle-2 circle-animation-bottom-top"></div>
+                <div class="circle-3 circle-animation-top-bottom"></div>
+            </div>
+            <div class="modal-header" style="justify-content: end;">
+            <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            <h3>Reach Out to Me, <br> Promise I don't Bite &#128512;</h3>
+            <div class="card card-body">
+                <a href="mailto:clarice.kibii@meltwater.org" class="text-decoration-none">
+                    <h5><span class="mx-2">&#128231;</span> clarice.kibii@meltwater.org</h5>
+                </a> 
+                <br>
+                <a class="btn btn-primary" href="">Contact Me Directly</a>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div> 
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="z-index: 1100;">
+        <div class="circle-container">
+            <img src="./assets/images/curves.svg" alt="curves">
+            <div class="cricle-1"></div>
+            <div class="circle-2"></div>
+            <div class="circle-3"></div>
+        </div>
+        <div class="offcanvas-header" style="justify-content: end;">
+          <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5> -->
+          <button type="button" class="btn-close text-reset mt-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="menu-sidebar">
+                <li><a class="nav-link" href="./index.html">Home<span class="line-divide"></span></a></li>
+                <li><a class="nav-link" href="./about_me.html"  title="Learn more about me">About me<span class="line-divide"></span></a></li>
+                <!-- <li><a class="nav-link" href="./my_projects.html"  title="See my projects">Case Studies<span class="line-divide"></span></a></li> -->
+                <!-- <li>
+                    <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownCaseStudies" data-bs-toggle="dropdown" aria-expanded="false">
+                              Case Studies<span class="line-divide"></span>
+                            </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownCaseStudies">
+                          <li><a class="dropdown-item" href="#">Building a Digital Banking System</a></li>
+                          <li><a class="dropdown-item" href="#">Creating a Learning Managment System</a></li>
+                          <li><a class="dropdown-item" href="#">Rebranding a Digital Branding Agency</a></li>
+                        </ul>
+                    </div>
+                </li> -->
+                <li>
+                    <a class="nav-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Case Studies
+                        <!-- <span class="line-divide"></span> -->
+                      </a>
+                    <div class="collapse" id="collapseExample">
+                      <div class="card card-body">
+                        <ul class="cs-menu" aria-labelledby="dropdownCaseStudies">
+                            <li><a  href="#">Building a Digital Banking System</a></li>
+                            <li><a  href="#">Creating a Learning Managment System</a></li>
+                            <li><a  href="#">Rebranding a Digital Branding Agency</a></li>
+                          </ul>
+                      </div>
+                    </div>
+                </li>
+                <li><a class="nav-link active" href="./my_skills_new.html"  title="My skills">My Skills<span class="line-divide"></span></a></li>
+                <li><a class="nav-link" href="./assets/images/CLARICE_PERU_UX_RESUME.pdf"  title="download my resume" download>Download My Resume &#128203;<span class="line-divide"></span></a></li>
+            </ul>
+        </div>
+        <div class="offcanvas-footer px-4 py-3">
+            <div class="sidebar-links flx flx-align-c flx-bt">
+                <a href="">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="">
+                    <i class="fas fa-globe"></i>
+                </a>
+                <a href="">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+      </div>
+      <a href="#top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+
+</body>
+<footer class="footer">
+    <div class="footer-inner" style="position: relative; overflow: hidden;">
+        <div class="circle-container">
+            <img src="./assets/images/curves.svg" alt="curves">
+            <div class="cricle-1"></div>
+            <div class="circle-2"></div>
+            <div class="circle-3"></div>
+        </div>
+        <div class="footer-container tt-wrap">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="footer-block menu-footer">
+                        <h4 class="f-block-heading">Menu</h4>
+                        <ul class="f-block-links">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="./my_projects.html">Case Studies #1 (Learning Managment System)</a></li>
+                            <li><a href="./my_projects.html">Case Studies #2 (Digital Banking)</a></li>
+                            <li><a href="./my_projects.html">Case Studies #3 (E-commerce Store)</a></li>
+                            <li><a href="mailto:claricekibii@gmail.com">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="col-md-3 col-sm-6 col-xs-12">
+    
+                    <div class="footer-block">
+                        <h4 class="f-block-heading">Follow</h4>
+                        <ul class="f-block-links">
+                            <li><a href="https://www.facebook.com/clarice.peru" target="_blank">Facebook</a></li>
+                            <li><a href="#" target="_blank">Twitter</a></li>
+                            <li><a href="https://www.instagram.com/peruclarice/" target="_blank">Instagram</a></li>
+                            <li><a href="#" target="_blank">Behance</a></li>
+                            <li><a href="#" target="_blank">Dribbble</a></li>
+                        </ul>
+                    </div>
+    
+                </div>
+    
+                <div class="col-md-3 col-sm-12 col-xs-12">
+    
+                    <div class="footer-block">
+                        <h4 class="f-block-heading">Contact</h4>
+                        <div class="f-block-text">
+                            <p>Kilimani, <br> Nairobi, Kenya</p>
+                            <p>+254 714 739 030<br>
+                            <a href="mailto:claricekibii@gmail.com">claricekibii@gmail.com</a></p>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-container tt-wrap">
+                <div class="row">
+                    <div class="col-md-12">
+    
+                        <!-- Begin footer copyright -->
+                        <div class="text-center">Copyright  &copy; 2021 | All rights reserved</div>
+                        <!-- End footer copyright -->
+    
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</footer>
+</html>
